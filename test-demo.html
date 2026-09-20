@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Cleaner Extension - Test Page</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      color: #1e293b;
+      background-color: #f8fafc;
+    }
+    header {
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+    .ad-banner {
+      background: #fef2f2;
+      border: 2px dashed #ef4444;
+      padding: 16px;
+      margin: 24px 0;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .sponsor-box {
+      background: #fffbeb;
+      border: 1px solid #f59e0b;
+      padding: 12px;
+      margin: 20px 0;
+      border-radius: 6px;
+    }
+    .video-wrapper {
+      background: #f1f5f9;
+      border: 1px solid #cbd5e1;
+      padding: 16px;
+      border-radius: 8px;
+      margin: 24px 0;
+    }
+    video {
+      width: 100%;
+      max-width: 480px;
+      height: 240px;
+      background: #000;
+      border-radius: 6px;
+    }
+    .article-text {
+      font-size: 16px;
+    }
+    .cookie-consent-modal {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+      background: #1e293b;
+      color: #f8fafc;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      z-index: 999999;
+    }
+    .cookie-consent-modal button {
+      background: #38bdf8;
+      color: #0f172a;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-weight: 600;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <!-- Simulated Cookie Consent / LGPD Banner -->
+  <div class="cookie-consent-modal onetrust-consent-sdk" id="cookie-notice-banner" role="dialog" aria-label="Aviso de Cookies e Privacidade">
+    <h4>Preferências de Cookies e Privacidade (LGPD/GDPR)</h4>
+    <p>Nós e os nossos parceiros utilizamos cookies e identificadores para personalizar conteúdos e anúncios. Clique em aceitar todos para continuar navegando.</p>
+    <button type="button">Aceitar Todos os Cookies</button>
+  </div>
+
+  <header>
+    <h1>The Future of Web Browsing & Clean Layouts</h1>
+    <p><em>Published on September 20, 2026 • 4 min read</em></p>
+  </header>
+
+  <!-- Simulated Top Advertisement Banner -->
+  <div class="ad-banner promoted-content" id="top-ad-slot">
+    <strong>[SIMULATED ADVERTISEMENT]</strong>
+    <p>Upgrade to UltraVPN today! Exclusive 80% discount for next 2 hours only.</p>
+  </div>
+
+  <main>
+    <p class="article-text">
+      Modern web browsers continue to evolve rapidly with performance enhancements and enhanced user privacy.
+      Content blocking technology plays a key role in keeping the web fast, readable, and respectful of battery life.
+    </p>
+
+    <!-- Simulated Autoplay Video Player -->
+    <div class="video-wrapper floating-player" id="autoplay-video-container">
+      <h3>Outstream Video Advertisement</h3>
+      <video autoplay muted playsinline loop>
+        <source src="data:video/mp4;base64," type="video/mp4">
+      </video>
+      <p><small>[SIMULATED AUTOPLAY VIDEO AD]</small></p>
+    </div>
+
+    <p class="article-text">
+      By offloading zero-shot classification to specialized APIs like classifier.dev, extensions can intelligently
+      discern between informative embedded tutorials and unwanted intrusive promotional media.
+    </p>
+
+    <!-- Simulated Sponsored Content Box -->
+    <div class="sponsor-box sponsor-ad taboola-ad">
+      <h4>Sponsored Recommendation</h4>
+      <p>Click here to discover the top 10 credit cards with zero annual fees for international travel.</p>
+    </div>
+
+    <p class="article-text">
+      Legitimate articles and main content blocks are preserved, ensuring zero disruption to normal reading flows.
+    </p>
+  </main>
+</body>
+</html>
